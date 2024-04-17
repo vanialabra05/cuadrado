@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    width: 400px; /* Cambia este valor según tus necesidades */
+    height: 400px; /* Cambia este valor según tus necesidades */
+    border: 1px solid #000;
+  }
+  
+  .square {
+    width: 50px; /* Tamaño del cuadrado */
+    height: 50px; /* Tamaño del cuadrado */
+    background-color: red; /* Color del cuadrado */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 4s infinite linear;
+  }
+  
+  @keyframes move {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: 350px; }
+    50% { top: 350px; left: 350px; }
+    75% { top: 350px; left: 0; }
+    100% { top: 0; left: 0; }
+  }
+  
